@@ -63,6 +63,12 @@ const Navbar = () => {
           >
             <TextScramble enterText="MAIL" />
           </a>
+          <a
+            href="https://drive.google.com/drive/folders/1jZGznxWpaR7PZEiohbVRxG_3Sn1WAIGg?dmr=1&ec=wgc-drive-hero-goto"
+            className="nav-txt"
+          >
+            <TextScramble enterText="RESUME" />
+          </a>
         </div>
 
       </div>
@@ -80,7 +86,7 @@ const Navbar = () => {
 
         {/* CENTER — ABOUT + YEAR */}
         <li className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <div className="flex items-center gap-x-16">
+          <div className="flex items-center gap-x-18">
             <div className="w-[5rem] text-left">
               <Link href="/about" className="nav-txt">
                 <TextScramble enterText="ABOUT" />
@@ -109,9 +115,14 @@ const Navbar = () => {
             >
               LN
             </a>
-            <div className="w-[4rem] text-left">
+            <div className=" w-[2.6rem] text-left">
               <a href="mailto:akshttt.dev@gmail.com" className="nav-txt">
                 <TextScramble enterText="MAIL" />
+              </a>
+            </div>
+            <div className="w-[3.6rem] text-left">
+              <a href="https://drive.google.com/drive/folders/1jZGznxWpaR7PZEiohbVRxG_3Sn1WAIGg?dmr=1&ec=wgc-drive-hero-goto" className="nav-txt">
+                <TextScramble enterText="RESUME" />
               </a>
             </div>
           </div>
