@@ -13,28 +13,6 @@ export const arraySlideUpAnimation: Variants = {
   exit: { y: "175%" },
 };
 
-export const horizontalAnimation: Variants = {
-  initial: {left: "0%",},
-  enter: (custom: number) => ({
-    left: "100%",
-    transition: {
-      duration: 0.45,
-      ease: [0.215, 0.61, 0.355, 1],
-      delay: 0.07 * custom,
-    },
-    transitionEnd: { left: "0%", width: 0 },
-  }),
-  exit: (custom: number) => ({
-    left: "0%",
-    width: "100%",
-    transition: {
-      duration: 0.45,
-      ease: [0.215, 0.61, 0.355, 1],
-      delay: 0.07 * custom,
-    },
-  }),
-};
-
 
 export const spanAnimation: Variants = {
   initial: { opacity: 0, y: 100 },
@@ -51,8 +29,8 @@ export const spanAnimation: Variants = {
 };
 
 export const slideTextAnim: Variants = {
-  initial: {y: "150%",},
-  animate: (custom : number) => ({
+  initial: { y: "150%" },
+  animate: (custom: number) => ({
     y: "0",
     transition: {
       duration: 0.4,
@@ -65,28 +43,3 @@ export const slideTextAnim: Variants = {
   },
 };
 
-export const pSlideParagraphAnim: Variants = {
-  initial: {
-    y: "170%",
-  },
-  animate: (custom) => ({
-    y: "0",
-    transition: {
-      duration: 1,
-      ease: [0.33, 1, 0.68, 1],
-      delay: 0.025 * custom,
-    },
-  }),
-};
-
-export const logoSlideAnim: Variants = {
-  initial: { opacity: 0 },
-  animate: (custom) => ({
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: [0.33, 1, 0.68, 1],
-      delay: 0.1 * custom,
-    },
-  }),
-};

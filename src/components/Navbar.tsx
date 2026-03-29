@@ -22,10 +22,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-[1001] px-6 py-6 select-none mix-blend-exclusion">
-
       {/* ================= MOBILE NAV (single line) ================= */}
       <div className="md:hidden w-full flex items-center justify-between whitespace-nowrap px-2">
-
         {/* Left — AKSHAT */}
         <span onClick={handleHomeClick} className="nav-txt cursor-pointer">
           <TextScramble enterText="AKSHAT" />
@@ -57,10 +55,7 @@ const Navbar = () => {
           >
             LN
           </a>
-          <a
-            href="mailto:akshttt.dev@gmail.com"
-            className="nav-txt"
-          >
+          <a href="mailto:akshttt.dev@gmail.com" className="nav-txt">
             <TextScramble enterText="MAIL" />
           </a>
           <a
@@ -70,13 +65,10 @@ const Navbar = () => {
             <TextScramble enterText="RESUME" />
           </a>
         </div>
-
       </div>
-
 
       {/* ================= DESKTOP NAV (unchanged) ================= */}
       <ul className="relative w-full h-full hidden md:block">
-
         {/* LEFT — AKSHAT */}
         <li className="absolute left-0 top-1/2 -translate-y-1/2">
           <span onClick={handleHomeClick} className="nav-txt cursor-pointer">
@@ -99,37 +91,43 @@ const Navbar = () => {
         {/* RIGHT — SOCIALS */}
         <li className="absolute right-0 top-1/2 -translate-y-1/2">
           <div className="flex items-center gap-x-6">
-            <a
-              href="https://x.com/akshttdev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-txt"
-            >
-              X
-            </a>
-            <a
-              href="https://www.linkedin.com/in/akshatdhami/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-txt"
-            >
-              LN
-            </a>
-            <div className=" w-[2.6rem] text-left">
+            <div className=" w-[1.8rem] text-left">
+              <a
+                href="https://x.com/akshttdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-txt"
+              >
+                X
+              </a>
+            </div>
+
+            <div className=" w-[2rem] text-left">
+              <a
+                href="https://www.linkedin.com/in/akshatdhami/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-txt"
+              >
+                LN
+              </a>
+            </div>
+            <div className=" w-[2.7rem] text-left">
               <a href="mailto:akshttt.dev@gmail.com" className="nav-txt">
                 <TextScramble enterText="MAIL" />
               </a>
             </div>
-            <div className="w-[3.6rem] text-left">
-              <a href="https://drive.google.com/drive/folders/1jZGznxWpaR7PZEiohbVRxG_3Sn1WAIGg?dmr=1&ec=wgc-drive-hero-goto" className="nav-txt">
+            <div className="w-[3.7rem] text-left">
+              <a
+                href="https://drive.google.com/drive/folders/1jZGznxWpaR7PZEiohbVRxG_3Sn1WAIGg?dmr=1&ec=wgc-drive-hero-goto"
+                className="nav-txt"
+              >
                 <TextScramble enterText="RESUME" />
               </a>
             </div>
           </div>
         </li>
-
       </ul>
-
     </nav>
   );
 };

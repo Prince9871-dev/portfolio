@@ -5,12 +5,50 @@ export const projectsData = [
     category: "System / ML",
     status: "2025",
     client: "Experimental",
-    description:
-      ".",
+    description: ".",
     license: "Private",
     img: "/images/projects/1.jpg",
     alt: "",
     url: "https://github.com/akshttdev/Synapse",
+  },
+  {
+    id: "cal",
+    name: "Cal",
+    category: "Full Stack / Scheduling",
+    status: "in progress",
+    client: "Internal",
+    description:
+      "A full-stack Cal.com-style scheduling application built with Next.js, Express, Prisma, and PostgreSQL. Enables users to create event types, configure availability, and share public booking links with dynamic slot generation.",
+    license: "Private",
+    img: "/images/projects/25.jpeg",
+    alt: "Cal scheduling application",
+    url: "https://github.com/akshttdev/Cal",
+  },
+  {
+    id: "torch",
+    name: "Torch",
+    category: "AI / RAG System",
+    status: "in progress",
+    client: "Personal",
+    description:
+      "A production-style Retrieval-Augmented Generation (RAG) system that acts as a PyTorch support engineer. Retrieves and generates grounded answers using PyTorch docs, source code, and GitHub issues with citation-backed responses.",
+    license: "Private",
+    img: "/images/projects/22.jpeg",
+    alt: "Torch RAG system",
+    url: "https://github.com/akshttdev/Torch",
+  },
+  {
+    id: "sortviz",
+    name: "Sorting Visualizer",
+    category: "JavaScript / DSA",
+    status: "2025",
+    client: "Self",
+    description:
+      "Classic sorting algorithm visualizer built using HTML, CSS, and JS — includes bubble, quick, merge, etc.",
+    license: "MIT",
+    img: "/images/projects/23.jpeg",
+    alt: "Sorting Visualizer",
+    url: "https://github.com/akshttdev/Sorting-Visualizer",
   },
 
   {
@@ -26,21 +64,6 @@ export const projectsData = [
     alt: "Burnout race predictor",
     url: "https://github.com/akshttdev/burnout",
   },
- 
-  {
-    id: "thirdeye",
-    name: "ThirdEye",
-    category: "TypeScript / Internal",
-    status: "in progress",
-    client: "Internal",
-    description:
-      "An internal visual monitoring tool for web apps, written in TypeScript. Tracks UI health metrics in real-time.",
-    license: "Private",
-    img: "/images/projects/17.jpg",
-    alt: "ThirdEye visual monitoring",
-    url: "https://github.com/akshttdev/ThirdEye",
-  },
-
   {
     id: "agronest",
     name: "AgroNest Infuturum",
@@ -50,22 +73,9 @@ export const projectsData = [
     description:
       "Web platform aimed at futuristic agriculture planning and crop data visualization. Built with JavaScript.",
     license: "MIT",
-    img: "/images/projects/22.jpeg",
+    img: "/images/projects/17.jpg",
     alt: "AgroNest interface",
     url: "https://github.com/akshttdev/AgroNestInfuturum",
-  },
-  {
-    id: "sortviz",
-    name: "Sorting Visualizer",
-    category: "JavaScript / DSA",
-    status: "2025",
-    client: "Self",
-    description:
-      "Classic sorting algorithm visualizer built using HTML, CSS, and JS — includes bubble, quick, merge, etc.",
-    license: "MIT",
-    img: "/images/projects/23.jpeg",
-    alt: "Sorting Visualizer",
-    url: "https://github.com/akshttdev/Sorting-Visualizer",
   },
   {
     id: "rps-robot",
@@ -80,4 +90,4 @@ export const projectsData = [
     alt: "PvRobot RPS",
     url: "https://github.com/akshttdev/RockPaperScissorPvRobot",
   },
-]
+];

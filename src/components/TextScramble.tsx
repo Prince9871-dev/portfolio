@@ -42,7 +42,7 @@ const TextScramble: FC<TextScrambleProps> = ({ enterText }) => {
             // Otherwise, return a random scramble character
             return chars[Math.floor(Math.random() * chars.length)];
           })
-          .join("")
+          .join(""),
       );
 
       // Stop the interval when all characters are revealed

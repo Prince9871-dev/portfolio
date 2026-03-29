@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   word: string;
@@ -10,7 +10,9 @@ type Props = {
 const RandomLetterReveal = ({ word, className }: Props) => {
   const containerRef = useRef<HTMLSpanElement>(null);
 
-  const [revealedIndices, setRevealedIndices] = useState<Set<number>>(new Set());
+  const [revealedIndices, setRevealedIndices] = useState<Set<number>>(
+    new Set(),
+  );
   const [isInView, setIsInView] = useState(false);
 
   // Prevents re-running the animation
@@ -18,7 +20,7 @@ const RandomLetterReveal = ({ word, className }: Props) => {
 
   // NEW: Instantly reveal if scrolled past
   const forceReveal = () => {
-    setRevealedIndices(new Set(word.split('').map((_, i) => i)));
+    setRevealedIndices(new Set(word.split("").map((_, i) => i)));
     hasAnimatedRef.current = true;
   };
 
@@ -36,7 +38,7 @@ const RandomLetterReveal = ({ word, className }: Props) => {
           forceReveal();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     observer.observe(node);
@@ -57,8 +59,8 @@ const RandomLetterReveal = ({ word, className }: Props) => {
       }
     };
 
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, [word]);
 
   // Main animation logic
@@ -66,7 +68,7 @@ const RandomLetterReveal = ({ word, className }: Props) => {
     if (hasAnimatedRef.current) return;
 
     if (isInView) {
-      const timers = word.split('').map((_, i) => {
+      const timers = word.split("").map((_, i) => {
         const delay = Math.random() * 800;
         return setTimeout(() => {
           setRevealedIndices((prev) => new Set(prev).add(i));
@@ -81,7 +83,7 @@ const RandomLetterReveal = ({ word, className }: Props) => {
 
   return (
     <span ref={containerRef} className={`${className} inline-block`}>
-      {word.split('').map((char, i) => (
+      {word.split("").map((char, i) => (
         <span
           key={i}
           className="transition-opacity duration-500 ease-in-out"
@@ -89,7 +91,7 @@ const RandomLetterReveal = ({ word, className }: Props) => {
             opacity: revealedIndices.has(i) ? 1 : 0,
           }}
         >
-          {char === ' ' ? '\u00A0' : char}
+          {char === " " ? "\u00A0" : char}
         </span>
       ))}
     </span>

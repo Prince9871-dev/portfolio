@@ -7,16 +7,23 @@ import HoverImageReveal from "@/components/HoverImage";
 import Footer from "@/components/Footer";
 
 const bgWords = [
-  "UI/UX", "REACT", "NEXT.JS", "TYPESCRIPT",
-  "ANIMATION", "FRAMER", "GSAP",
-  "DESIGN", "SYSTEMS", "ARCHITECTURE", "PERFORMANCE",
+  "UI/UX",
+  "REACT",
+  "NEXT.JS",
+  "TYPESCRIPT",
+  "ANIMATION",
+  "FRAMER",
+  "GSAP",
+  "DESIGN",
+  "SYSTEMS",
+  "ARCHITECTURE",
+  "PERFORMANCE",
 ];
 
 export default function AboutPage() {
   return (
     <HorizontalTransition>
       <div className="noise relative w-screen min-h-screen overflow-hidden text-white bg-black">
-
         <Navbar />
 
         {/* INTRO LINE */}
@@ -105,20 +112,24 @@ export default function AboutPage() {
           >
             {/* FIRST LINE WITH HOVER IMAGE */}
             <p className="max-sm:text-s text-[1.1rem] opacity-95 leading-relaxed font-semibold uppercase">
-              <HoverImageReveal label="Akshat" image="/images/me.jpg" /> is someone who runs on curiosity,
-              instinct, and a slightly obsessive need to make things feel intentional. He digs deep into ideas,
-              takes them apart, questions the obvious, and rebuilds them with cleaner structure and sharper personality.
+              <HoverImageReveal label="Akshat" image="/images/me.jpg" /> is
+              someone who runs on curiosity, instinct, and a slightly obsessive
+              need to make things feel intentional. He digs deep into ideas,
+              takes them apart, questions the obvious, and rebuilds them with
+              cleaner structure and sharper personality.
             </p>
 
             <p className="max-sm:text-s text-[1.1rem] opacity-95 leading-relaxed font-semibold uppercase">
-              He learns fast, experiments without fear, and pushes visuals until they stop feeling random.
-              Whether it's code, motion, product logic, or design systems — the goal is always the same:
-              make it feel alive and make it feel right.
+              He learns fast, experiments without fear, and pushes visuals until
+              they stop feeling random. Whether it's code, motion, product
+              logic, or design systems — the goal is always the same: make it
+              feel alive and make it feel right.
             </p>
 
             <p className="max-sm:text-s text-[1.1rem] opacity-95 leading-relaxed font-semibold uppercase">
-              Away from the monitor, he’s still restless — traveling whenever he can, playing guitar,
-              running long distances, obsessing over football, blasting metal or Bollywood..
+              Away from the monitor, he’s still restless — traveling whenever he
+              can, playing guitar, running long distances, obsessing over
+              football, blasting metal or Bollywood..
             </p>
           </motion.div>
         </main>

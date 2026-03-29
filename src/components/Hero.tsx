@@ -11,10 +11,10 @@ const Hero: FC = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    
+
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
@@ -38,12 +38,10 @@ const Hero: FC = () => {
       </div>
 
       <div className="flex flex-col px-6 md:px-16 w-full max-w-6xl pointer-events-none">
-
         {/* ======================================================
             BIG TITLES — FULLY RESPONSIVE + 1240–1350 FIX
         ======================================================= */}
-        <div className="mt-24 md:mt-32 ml-0 lg:ml-[-6rem] xl:ml-[-10rem]">
-
+        <div className="mt-24 md:mt-32 ml-0 lg:ml-0 xl:ml-[-10rem]">
           <RandomLetterReveal
             word="FRONT–END"
             className="block font-extrabold tracking-tight leading-[0.9]
@@ -83,7 +81,6 @@ const Hero: FC = () => {
                       xl:text-[7rem]
                       2xl:text-[9rem]"
           />
-
         </div>
 
         {/* ======================================================
@@ -91,7 +88,6 @@ const Hero: FC = () => {
         ======================================================= */}
         <div className="mt-6 md:mt-10 w-full md:flex md:justify-end md:pr-5">
           <div className="max-w-[90%] sm:max-w-[80%] md:max-w-md text-left md:text-right">
-
             <RandomLetterReveal
               word={`I DESIGN AND BUILD SMOOTH, INTERACTIVE, AND VISUALLY ENGAGING DIGITAL 
 EXPERIENCES. I BLEND UI/UX, MOTION, AND CLEAN ENGINEERING TO CREATE 
@@ -102,10 +98,8 @@ THAT FEELS EXPRESSIVE, INTENTIONAL AND REALLY COOL.`}
               className="text-[0.5rem] sm:text-xs md:text-base opacity-80 
                          leading-relaxed uppercase font-medium  text-left whitespace-pre-line "
             />
-
           </div>
         </div>
-
       </div>
     </section>
   );

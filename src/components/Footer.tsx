@@ -1,5 +1,7 @@
 "use client";
 
+import TextScramble from "./TextScramble";
+
 export default function Footer() {
   return (
     <footer
@@ -22,8 +24,8 @@ export default function Footer() {
       {/* MAIN SECTION - LEFT ALIGNED */}
       <div className="relative z-10 flex flex-col mt-30 justify-center h-full max-w-2xl">
         <h1 className="text-5xl md:text-7xl font-extrabold uppercase leading-[0.9]">
-          LET'S MAKE  
-          <br /> SOMETHING  
+          LET'S MAKE
+          <br /> SOMETHING
           <br /> THAT FEELS ALIVE.
         </h1>
 
@@ -32,37 +34,36 @@ export default function Footer() {
         </p>
 
         {/* CONTACT LINKS — HORIZONTAL WITH PROPER SPACING */}
-        <div className="flex flex-wrap items-center gap-8 md:gap-10 mt-12 text-3xl md:text-4xl max-sm:pt-10 pt-60 font-bold uppercase opacity-80">
-          <a 
-            href="mailto:akshttt.dev@gmail.com" 
-            className="hover:opacity-100 transition block"
+        <div className="flex flex-wrap items-center gap-8 md:gap-10 mt-12 text-3xl md:text-4xl max-sm:pt-10 pt-60 font-bold uppercase">
+          <a
+            href="mailto:akshttt.dev@gmail.com"
+            className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
             mail
           </a>
-
-          <a 
-            href="https://www.linkedin.com/in/akshatdhami/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/akshatdhami/"
+            target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-100 transition block"
+            className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
             linkedin
           </a>
 
-          <a 
-            href="https://x.com/akshttdev" 
-            target="_blank" 
+          <a
+            href="https://x.com/akshttdev"
+            target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-100 transition block"
+            className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
             twitter
           </a>
 
-          <a 
-            href="https://github.com/akshttdev" 
-            target="_blank" 
+          <a
+            href="https://github.com/akshttdev"
+            target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-100 transition block"
+            className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
             github
           </a>
@@ -74,21 +75,19 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="relative z-10 pt-4 pb-4 flex justify-between items-end flex-wrap gap-6">
-
         <div className="text-sm md:text-base opacity-70 leading-relaxed max-w-md font-medium uppercase">
-          because great work isn't luck — it's obsession, patience, and a refusal to ship anything mid.
+          because great work isn't luck — it's obsession, patience, and a
+          refusal to ship anything mid.
         </div>
 
         <div className="text-xs opacity-70 text-right space-y-1">
-
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="hover:opacity-100 opacity-70 transition underline font-semibold uppercase"
+            className="text-white/60 hover:text-white transition-colors duration-200 underline font-semibold uppercase cursor-pointer"
           >
             back to top
           </button>
         </div>
-
       </div>
     </footer>
   );

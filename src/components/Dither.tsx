@@ -158,11 +158,19 @@ class RetroEffectImpl extends Effect {
     super("RetroEffect", ditherFragmentShader, { uniforms });
     this.uniforms = uniforms;
   }
-  set colorNum(v: number) { this.uniforms.get("colorNum")!.value = v; }
-  get colorNum() { return this.uniforms.get("colorNum")!.value; }
+  set colorNum(v: number) {
+    this.uniforms.get("colorNum")!.value = v;
+  }
+  get colorNum() {
+    return this.uniforms.get("colorNum")!.value;
+  }
 
-  set pixelSize(v: number) { this.uniforms.get("pixelSize")!.value = v; }
-  get pixelSize() { return this.uniforms.get("pixelSize")!.value; }
+  set pixelSize(v: number) {
+    this.uniforms.get("pixelSize")!.value = v;
+  }
+  get pixelSize() {
+    return this.uniforms.get("pixelSize")!.value;
+  }
 }
 
 const RetroEffect = wrapEffect(RetroEffectImpl);
@@ -181,7 +189,6 @@ type DitheredWavesProps = {
 
 type DitherProps = Partial<DitheredWavesProps>;
 
-
 /* ===============================
    WAVES + DITHER MAIN COMPONENT
 ================================= */
@@ -196,7 +203,7 @@ function DitheredWaves({
   disableAnimation,
   enableMouseInteraction,
   mouseRadius,
-}:DitheredWavesProps){
+}: DitheredWavesProps) {
   const mesh = useRef<THREE.Mesh>(null);
   const mouseRef = useRef(new THREE.Vector2());
   const { viewport, size, gl } = useThree();
@@ -223,7 +230,7 @@ function DitheredWaves({
 
       mouseRef.current.set(
         (e.clientX - rect.left) * dpr,
-        (e.clientY - rect.top) * dpr
+        (e.clientY - rect.top) * dpr,
       );
     };
 
@@ -234,10 +241,7 @@ function DitheredWaves({
   /* ====== RESOLUTION UPDATE ====== */
   useEffect(() => {
     const dpr = gl.getPixelRatio();
-    uniforms.current.resolution.value.set(
-      size.width * dpr,
-      size.height * dpr
-    );
+    uniforms.current.resolution.value.set(size.width * dpr, size.height * dpr);
   }, [size, gl]);
 
   /* ====== MAIN FRAME LOOP ====== */
@@ -251,8 +255,7 @@ function DitheredWaves({
     u.waveAmplitude.value = waveAmplitude;
     u.waveColor.value.set(...waveColor);
 
-    if (enableMouseInteraction)
-      u.mousePos.value.copy(mouseRef.current);
+    if (enableMouseInteraction) u.mousePos.value.copy(mouseRef.current);
 
     u.enableMouseInteraction.value = enableMouseInteraction ? 1 : 0;
     u.mouseRadius.value = mouseRadius;
@@ -291,7 +294,6 @@ export default function Dither({
   enableMouseInteraction = true,
   mouseRadius = 0.3,
 }: DitherProps) {
-
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
   const finalMouseInteraction = isMobile ? false : enableMouseInteraction;
 

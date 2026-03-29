@@ -34,24 +34,29 @@ const Background: FC = () => {
         </motion.div>
       </div>
 
-<div className="absolute top-32 left-1/2 -translate-x-1/2 z-20 pointer-events-none select-none mix-blend-difference">
-  <p className="text-white uppercase tracking-wide 
-                text-xs sm:text-sm md:text-base font-semibold">
-     Discomfort Drives Growth 
-  </p>
-</div>
-
+      <div className="absolute top-32 left-1/2 -translate-x-1/2 z-20 pointer-events-none select-none mix-blend-difference">
+        <p
+          className="text-white uppercase tracking-wide 
+                text-xs sm:text-sm md:text-base font-semibold"
+        >
+          Discomfort Drives Growth
+        </p>
+      </div>
 
       {/* MY VISION TEXT */}
       <div className="absolute bottom-1 left-6 md:left-10 z-20 pointer-events-none select-none">
-        <h1 className="text-white font-extrabold tracking-tight mix-blend-difference
-                       text-[5rem] sm:text-[4rem] md:text-[10rem] leading-[0.9]">
-          MY<br />VISION
+        <h1
+          className="text-white font-extrabold tracking-tight mix-blend-difference
+                       text-[5rem] sm:text-[4rem] md:text-[10rem] leading-[0.9]"
+        >
+          MY
+          <br />
+          VISION
         </h1>
       </div>
 
       {/* QUOTE — stays in normal layout, NO absolute positioning */}
-      <div className="mt-6 md:mt-10 w-full md:flex md:justify-end md:pr-5 z-20">
+      <div className="mt-6 md:mt-10 w-full md:flex md:justify-end md:pr-5 z-20 mix-blend-difference">
         <div
           className="
             max-w-[90%]
@@ -72,9 +77,9 @@ const Background: FC = () => {
               text-left
             "
           >
-            " I’m wired to fixate, break things apart, and push them past the obvious.
-            It’s never clean, never linear — just persistence until meaning shows up.
-            Nothing extravagant. "
+            " I’m wired to fixate, break things apart, and push them past the
+            obvious. It’s never clean, never linear — just persistence until
+            meaning shows up. Nothing extravagant. "
           </p>
         </div>
       </div>
