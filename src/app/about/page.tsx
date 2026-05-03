@@ -112,7 +112,7 @@ export default function AboutPage() {
           >
             {/* FIRST LINE WITH HOVER IMAGE */}
             <p className="max-sm:text-s text-[1.1rem] opacity-95 leading-relaxed font-semibold uppercase">
-              <HoverImageReveal label="Akshat" image="/images/me.jpg" /> is
+              <HoverImageReveal label="Prince" image="/images/me.jpeg" /> is
               someone who runs on curiosity, instinct, and a slightly obsessive
               need to make things feel intentional. He digs deep into ideas,
               takes them apart, questions the obvious, and rebuilds them with

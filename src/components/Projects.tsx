@@ -122,6 +122,32 @@ const Projects = () => {
                   <RandomLetterReveal word={project.status} />
                 </p>
               </div>
+
+              {/* ACTION LINKS */}
+              <div className="mt-3 w-full flex gap-4 opacity-80 z-50">
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[0.9rem] uppercase font-semibold hover:text-white transition-colors duration-300 relative z-50"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    GitHub
+                  </a>
+                )}
+                {(project as any).liveUrl && (
+                  <a
+                    href={(project as any).liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[0.9rem] uppercase font-semibold hover:text-white transition-colors duration-300 relative z-50"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Live Site
+                  </a>
+                )}
+              </div>
             </motion.div>
           );
         })}

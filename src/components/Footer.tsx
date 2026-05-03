@@ -8,7 +8,6 @@ export default function Footer() {
       className="
         relative w-full min-h-screen text-white 
         flex flex-col justify-between px-8 md:px-20 py-12
-        overflow-hidden
       "
     >
       {/* LIGHT NOISE OVERLAY */}
@@ -36,13 +35,15 @@ export default function Footer() {
         {/* CONTACT LINKS — HORIZONTAL WITH PROPER SPACING */}
         <div className="flex flex-wrap items-center gap-8 md:gap-10 mt-12 text-3xl md:text-4xl max-sm:pt-10 pt-60 font-bold uppercase">
           <a
-            href="mailto:akshttt.dev@gmail.com"
+            href="mailto:princejha4477@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
             mail
           </a>
           <a
-            href="https://www.linkedin.com/in/akshatdhami/"
+            href="https://linkedin.com/in/prince-jha-10b942230"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-200 block"
@@ -51,16 +52,16 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://x.com/akshttdev"
+            href="https://codolio.com/profile/PrinceCode07io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-200 block"
           >
-            twitter
+            codolio
           </a>
 
           <a
-            href="https://github.com/akshttdev"
+            href="https://github.com/Prince9871-dev"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-200 block"
@@ -75,7 +76,7 @@ export default function Footer() {
 
       {/* BOTTOM BAR */}
       <div className="relative z-10 pt-4 pb-4 flex justify-between items-end flex-wrap gap-6">
-        <div className="text-sm md:text-base opacity-70 leading-relaxed max-w-md font-medium uppercase">
+        <div className="text-sm md:text-base lg:text-lg w-full max-w-[900px] break-words whitespace-normal leading-[1.4] opacity-70 font-medium uppercase">
           because great work isn't luck — it's obsession, patience, and a
           refusal to ship anything mid.
         </div>

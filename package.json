@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--localstorage-file=.next/localstorage' next dev --turbopack",
+    "dev": "next dev",
     "build": "NODE_OPTIONS='--localstorage-file=.next/localstorage' next build",
     "start": "NODE_OPTIONS='--localstorage-file=.next/localstorage' next start",
     "lint": "next lint"

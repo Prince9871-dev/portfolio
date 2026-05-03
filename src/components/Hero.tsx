@@ -21,7 +21,7 @@ const Hero: FC = () => {
   return (
     <section
       id="index"
-      className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden select-none"
+      className="relative w-full min-h-screen flex items-center justify-center text-white pb-16 md:pb-24 select-none"
     >
       {/* === Background === */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -43,7 +43,7 @@ const Hero: FC = () => {
         ======================================================= */}
         <div className="mt-24 md:mt-32 ml-0 lg:ml-0 xl:ml-[-10rem]">
           <RandomLetterReveal
-            word="FRONT–END"
+            word="FULL STACK"
             className="block font-extrabold tracking-tight leading-[0.9]
                       text-[2.8rem] sm:text-[3.5rem]
                       md:text-[5rem]
@@ -53,7 +53,17 @@ const Hero: FC = () => {
           />
 
           <RandomLetterReveal
-            word="DEVELOPER"
+            word="DEVELOPER |"
+            className="block font-extrabold tracking-tight leading-[0.9]
+                      text-[2.8rem] sm:text-[3.5rem]
+                      md:text-[5rem]
+                      lg:text-[6rem]
+                      xl:text-[7rem]
+                      2xl:text-[9rem] mb-2 md:mb-4"
+          />
+
+          <RandomLetterReveal
+            word="AI/ML ENTHUSIAST"
             className="block font-extrabold tracking-tight leading-[0.9]
                       text-[2.8rem] sm:text-[3.5rem]
                       md:text-[5rem]
@@ -86,17 +96,11 @@ const Hero: FC = () => {
         {/* ======================================================
             SMALL PARAGRAPH — CLEAN, RESPONSIVE, AWWARDS STYLE
         ======================================================= */}
-        <div className="mt-6 md:mt-10 w-full md:flex md:justify-end md:pr-5">
-          <div className="max-w-[90%] sm:max-w-[80%] md:max-w-md text-left md:text-right">
+        <div className="mt-6 md:mt-10 w-full flex justify-start md:justify-end px-4 md:px-6 pb-10">
+          <div className="max-w-full sm:max-w-[85%] md:max-w-lg lg:max-w-xl text-left md:text-right">
             <RandomLetterReveal
-              word={`I DESIGN AND BUILD SMOOTH, INTERACTIVE, AND VISUALLY ENGAGING DIGITAL 
-EXPERIENCES. I BLEND UI/UX, MOTION, AND CLEAN ENGINEERING TO CREATE 
-PRODUCTS THAT FEEL FAST, MODERN, AND HUMAN. I LOVE EXPERIMENTING 
-WITH MOTION, INTERACTION, AND MICRO DETAILS THAT MAKE INTERFACES 
-FEEL ALIVE. ALWAYS EXPLORING, ALWAYS LEARNING CRAFTING DIGITAL WORK 
-THAT FEELS EXPRESSIVE, INTENTIONAL AND REALLY COOL.`}
-              className="text-[0.5rem] sm:text-xs md:text-base opacity-80 
-                         leading-relaxed uppercase font-medium  text-left whitespace-pre-line "
+              word={`Full-stack and AI/ML developer passionate about building scalable real-world applications and intelligent systems.`}
+              className="text-[0.7rem] sm:text-sm md:text-base lg:text-lg opacity-90 leading-relaxed uppercase font-medium text-left md:text-right whitespace-normal break-words"
             />
           </div>
         </div>
