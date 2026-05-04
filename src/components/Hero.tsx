@@ -21,7 +21,7 @@ const Hero: FC = () => {
   return (
     <section
       id="index"
-      className="relative w-full min-h-screen flex items-center justify-center text-white pb-16 md:pb-24 select-none"
+      className="relative w-full min-h-screen flex flex-col justify-center text-white select-none"
     >
       {/* === Background === */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -37,72 +37,65 @@ const Hero: FC = () => {
         />
       </div>
 
-      <div className="flex flex-col px-4 md:px-6 w-full max-w-screen-xl mx-auto pointer-events-none">
+      <div className="flex flex-col px-6 md:px-12 w-full max-w-[1200px] mx-auto pointer-events-none">
         {/* ======================================================
             BIG TITLES — FULLY RESPONSIVE + ALIGNED
         ======================================================= */}
-        <div className="mt-24 md:mt-32 w-full">
+        <div className="flex flex-col gap-2 md:gap-4 w-full">
           <RandomLetterReveal
             word="FULL STACK"
-            className="block font-extrabold tracking-tight leading-[1.1]
+            className="block font-extrabold tracking-tight leading-tight
                       text-[2.5rem] sm:text-[3.5rem]
-                      md:text-[4.5rem]
-                      lg:text-[5.5rem]
-                      xl:text-[6.5rem]
-                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
+                      md:text-[5rem]
+                      lg:text-[6.5rem]
+                      xl:text-[8rem] break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="DEVELOPER |"
-            className="block font-extrabold tracking-tight leading-[1.1]
+            className="block font-extrabold tracking-tight leading-tight
                       text-[2.5rem] sm:text-[3.5rem]
-                      md:text-[4.5rem]
-                      lg:text-[5.5rem]
-                      xl:text-[6.5rem]
-                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
+                      md:text-[5rem]
+                      lg:text-[6.5rem]
+                      xl:text-[8rem] break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="AI/ML ENTHUSIAST"
-            className="block font-extrabold tracking-tight leading-[1.1]
+            className="block font-extrabold tracking-tight leading-tight
                       text-[2.5rem] sm:text-[3.5rem]
-                      md:text-[4.5rem]
-                      lg:text-[5.5rem]
-                      xl:text-[6.5rem]
-                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
+                      md:text-[5rem]
+                      lg:text-[6.5rem]
+                      xl:text-[8rem] break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="BASED IN DELHI,"
-            className="block font-extrabold tracking-tight leading-[1.1]
+            className="block font-extrabold tracking-tight leading-tight
                       text-[2.5rem] sm:text-[3.5rem]
-                      md:text-[4.5rem]
-                      lg:text-[5.5rem]
-                      xl:text-[6.5rem]
-                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
+                      md:text-[5rem]
+                      lg:text-[6.5rem]
+                      xl:text-[8rem] break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="INDIA"
-            className="block font-extrabold tracking-tight leading-[1.1]
+            className="block font-extrabold tracking-tight leading-tight
                       text-[2.5rem] sm:text-[3.5rem]
-                      md:text-[4.5rem]
-                      lg:text-[5.5rem]
-                      xl:text-[6.5rem]
-                      2xl:text-[8rem] break-words whitespace-normal"
+                      md:text-[5rem]
+                      lg:text-[6.5rem]
+                      xl:text-[8rem] break-words whitespace-normal"
           />
         </div>
 
         {/* ======================================================
             SMALL PARAGRAPH — CLEAN, RESPONSIVE, ALIGNED
         ======================================================= */}
-        <div className="mt-8 md:mt-12 w-full flex justify-start md:justify-end pb-10">
-          <div className="max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl text-left md:text-right">
-            <RandomLetterReveal
-              word={`Full-stack and AI/ML developer passionate about building scalable real-world applications and intelligent systems.`}
-              className="text-sm sm:text-base md:text-lg opacity-90 leading-relaxed uppercase font-medium text-left md:text-right whitespace-normal break-words"
-            />
-          </div>
+        <div className="mt-12 md:mt-16 max-w-[500px] self-end text-left md:text-right">
+          <RandomLetterReveal
+            word={`Full-stack and AI/ML developer passionate about building scalable real-world applications and intelligent systems.`}
+            className="text-sm sm:text-base md:text-lg opacity-90 leading-relaxed uppercase font-medium whitespace-normal break-words"
+          />
         </div>
       </div>
     </section>
