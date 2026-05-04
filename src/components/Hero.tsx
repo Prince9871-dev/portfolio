@@ -37,70 +37,70 @@ const Hero: FC = () => {
         />
       </div>
 
-      <div className="flex flex-col px-6 md:px-16 w-full max-w-6xl pointer-events-none">
+      <div className="flex flex-col px-4 md:px-6 w-full max-w-screen-xl mx-auto pointer-events-none">
         {/* ======================================================
-            BIG TITLES — FULLY RESPONSIVE + 1240–1350 FIX
+            BIG TITLES — FULLY RESPONSIVE + ALIGNED
         ======================================================= */}
-        <div className="mt-24 md:mt-32 ml-0 lg:ml-0 xl:ml-[-10rem]">
+        <div className="mt-24 md:mt-32 w-full">
           <RandomLetterReveal
             word="FULL STACK"
-            className="block font-extrabold tracking-tight leading-[0.9]
-                      text-[2.8rem] sm:text-[3.5rem]
-                      md:text-[5rem]
-                      lg:text-[6rem]
-                      xl:text-[7rem]
-                      2xl:text-[9rem] mb-2 md:mb-4"
+            className="block font-extrabold tracking-tight leading-[1.1]
+                      text-[2.5rem] sm:text-[3.5rem]
+                      md:text-[4.5rem]
+                      lg:text-[5.5rem]
+                      xl:text-[6.5rem]
+                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="DEVELOPER |"
-            className="block font-extrabold tracking-tight leading-[0.9]
-                      text-[2.8rem] sm:text-[3.5rem]
-                      md:text-[5rem]
-                      lg:text-[6rem]
-                      xl:text-[7rem]
-                      2xl:text-[9rem] mb-2 md:mb-4"
+            className="block font-extrabold tracking-tight leading-[1.1]
+                      text-[2.5rem] sm:text-[3.5rem]
+                      md:text-[4.5rem]
+                      lg:text-[5.5rem]
+                      xl:text-[6.5rem]
+                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="AI/ML ENTHUSIAST"
-            className="block font-extrabold tracking-tight leading-[0.9]
-                      text-[2.8rem] sm:text-[3.5rem]
-                      md:text-[5rem]
-                      lg:text-[6rem]
-                      xl:text-[7rem]
-                      2xl:text-[9rem] mb-2 md:mb-4"
+            className="block font-extrabold tracking-tight leading-[1.1]
+                      text-[2.5rem] sm:text-[3.5rem]
+                      md:text-[4.5rem]
+                      lg:text-[5.5rem]
+                      xl:text-[6.5rem]
+                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="BASED IN DELHI,"
-            className="block font-extrabold tracking-tight leading-[0.9]
-                      text-[2.8rem] sm:text-[3.5rem]
-                      md:text-[5rem]
-                      lg:text-[6rem]
-                      xl:text-[7rem]
-                      2xl:text-[9rem] mb-2 md:mb-4"
+            className="block font-extrabold tracking-tight leading-[1.1]
+                      text-[2.5rem] sm:text-[3.5rem]
+                      md:text-[4.5rem]
+                      lg:text-[5.5rem]
+                      xl:text-[6.5rem]
+                      2xl:text-[8rem] mb-2 md:mb-4 break-words whitespace-normal"
           />
 
           <RandomLetterReveal
             word="INDIA"
-            className="block font-extrabold tracking-tight leading-[0.9]
-                      text-[2.8rem] sm:text-[3.5rem]
-                      md:text-[5rem]
-                      lg:text-[6rem]
-                      xl:text-[7rem]
-                      2xl:text-[9rem]"
+            className="block font-extrabold tracking-tight leading-[1.1]
+                      text-[2.5rem] sm:text-[3.5rem]
+                      md:text-[4.5rem]
+                      lg:text-[5.5rem]
+                      xl:text-[6.5rem]
+                      2xl:text-[8rem] break-words whitespace-normal"
           />
         </div>
 
         {/* ======================================================
-            SMALL PARAGRAPH — CLEAN, RESPONSIVE, AWWARDS STYLE
+            SMALL PARAGRAPH — CLEAN, RESPONSIVE, ALIGNED
         ======================================================= */}
-        <div className="mt-6 md:mt-10 w-full flex justify-start md:justify-end px-4 md:px-6 pb-10">
-          <div className="max-w-full sm:max-w-[85%] md:max-w-lg lg:max-w-xl text-left md:text-right">
+        <div className="mt-8 md:mt-12 w-full flex justify-start md:justify-end pb-10">
+          <div className="max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl text-left md:text-right">
             <RandomLetterReveal
               word={`Full-stack and AI/ML developer passionate about building scalable real-world applications and intelligent systems.`}
-              className="text-[0.7rem] sm:text-sm md:text-base lg:text-lg opacity-90 leading-relaxed uppercase font-medium text-left md:text-right whitespace-normal break-words"
+              className="text-sm sm:text-base md:text-lg opacity-90 leading-relaxed uppercase font-medium text-left md:text-right whitespace-normal break-words"
             />
           </div>
         </div>
