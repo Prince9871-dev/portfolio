@@ -94,8 +94,8 @@ const Hero: FC = () => {
         {/* ======================================================
             SMALL PARAGRAPH — CLEAN, RESPONSIVE, ALIGNED
         ======================================================= */}
-        <div className="w-full flex justify-end mt-6 md:mt-8 pr-6 md:pr-10 lg:pr-16">
-          <div className="max-w-[380px] md:max-w-[420px] text-right">
+        <div className="w-full flex justify-end mt-6 md:mt-8 pr-10 md:pr-14 lg:pr-20">
+          <div className="max-w-[360px] md:max-w-[400px] text-right">
             <RandomLetterReveal
               word={`Full-stack and AI/ML developer passionate about building scalable real-world applications and intelligent systems.`}
               className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed uppercase font-medium whitespace-normal break-words"
